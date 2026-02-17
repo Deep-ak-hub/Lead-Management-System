@@ -1,0 +1,37 @@
+{
+  "name": "leadmangementsystem",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "postcss src/css/styles.css -o public/css/styles.css",
+    "watch:css": "postcss src/css/styles.css -o public/css/styles.css --watch",
+    "dev": "nodemon server.js",
+    "seed:admin": "node src/seed/admin.js",
+    "seed:leads": "node src/seed/leads.js",
+    "seed:projects": "node src/seed/projects.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "ejs": "^3.1.10",
+    "express": "^4.22.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-validator": "^7.3.1",
+    "joi": "^18.0.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.23.0",
+    "morgan": "^1.10.1",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.10.1",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

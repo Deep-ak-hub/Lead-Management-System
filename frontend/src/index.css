@@ -1,0 +1,14 @@
+@import "tailwindcss";
+:root {
+  background-color: var(--color-background);
+  input,
+  select {
+    color: black;
+  }
+}
+@theme {
+  --color-primary: #4f46e5;
+  --color-secondary: #6b7280;
+  --color-accent: #10b981;
+  --color-background: #000;
+}
