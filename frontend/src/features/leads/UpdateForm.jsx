@@ -86,7 +86,7 @@ const UpdateForm = ({ selectedValue, setSelectedValue }) => {
                     </select>
                 </div>
 
-                {/* follow up date */}
+                //follow up date
 
                 {updateForm?.status == 'Follow Up' && <> <div className='flex flex-col my-3'>
                     <label>Follow up Date</label>
