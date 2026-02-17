@@ -70,7 +70,7 @@ export const AdminApi = createApi({
       providesTags: ["Admin"],
     }),
   }),
-});
+})
 
 export const {
   useSigninAdminMutation,
