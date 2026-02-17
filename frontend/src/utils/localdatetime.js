@@ -20,7 +20,7 @@ export const formatDate = (date) => {
 
 export const formatForDateTimeInput = (iso) => {
   if (!iso) return "";
-  const d = new Date(iso);
+  const d = new Date(iso)
 
   const y = d.getFullYear();
   const m = String(d.getMonth() + 1).padStart(2, "0");
