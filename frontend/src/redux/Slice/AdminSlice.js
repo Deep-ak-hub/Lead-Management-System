@@ -14,7 +14,7 @@ export const AdminSlice = createSlice({
       localStorage.clear();
     },
   },
-});
+})
 
 export const { logout, login } = AdminSlice.actions;
 export default AdminSlice.reducer;
