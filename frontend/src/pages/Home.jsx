@@ -5,7 +5,6 @@ import { Link } from 'react-router'
 export default function Home() {
     return (
         <div className="min-h-screen bg-black">
-
             <nav className="sticky top-0 z-50 bg-black/40 backdrop-blur-md border-b border-white/10">
                 <div className="max-w-7xl mx-auto px-6 py-4">
                     <div className="flex items-center justify-between">
@@ -291,7 +290,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* CTA Section */}
+            // CTA Section
             <section className="max-w-7xl mx-auto px-6 py-20">
                 <div className="relative rounded-3xl p-12 md:p-16 overflow-hidden">
                     <div className="absolute inset-0 bg-black/20"></div>
