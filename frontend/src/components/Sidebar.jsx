@@ -7,6 +7,7 @@ import { IoMdSettings } from "react-icons/io";
 import { TbShieldCancel } from "react-icons/tb";
 import { PiStudentBold } from "react-icons/pi";
 
+// sidebar
 const Sidebar = ({ setIsOpen }) => {
     const { data: admin } = useGetAdminQuery()
 

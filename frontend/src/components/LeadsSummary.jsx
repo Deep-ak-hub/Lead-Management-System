@@ -8,6 +8,7 @@ import { TbShieldCancel } from "react-icons/tb";
 import { useParams } from "react-router";
 import { useGetAdminQuery } from "../redux/Api/Admin";
 
+// summary
 const LeadsSummary = () => {
     const { status } = useParams()
     const { data: admin } = useGetAdminQuery()
