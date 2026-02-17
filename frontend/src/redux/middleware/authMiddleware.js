@@ -5,4 +5,4 @@ export const authMiddleware = (store) => (next) => (action) => {
     store.dispatch(logout());
   }
   return next(action);
-};
+}
