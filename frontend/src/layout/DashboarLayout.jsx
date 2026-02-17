@@ -1,6 +1,5 @@
 import { memo, useEffect, useRef, useState } from "react";
 import { FaPlus } from "react-icons/fa6";
-import { FaRegUser } from "react-icons/fa";
 import { NavLink, Outlet, useNavigate } from "react-router";
 import { useGetAdminQuery } from "../redux/Api/Admin";
 import { useDispatch } from "react-redux";
