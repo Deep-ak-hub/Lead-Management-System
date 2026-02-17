@@ -1,11 +1,10 @@
-import { Provider } from 'react-redux'
+import { Provider } from "react-redux";
 
-import { store } from './app/store'
-import { ToastContainer } from 'react-toastify'
-import MyRoutes from './CustomeRoutes'
+import { store } from "./app/store";
+import { ToastContainer } from "react-toastify";
+import MyRoutes from "./CustomeRoutes";
 
 function App() {
-
   return (
     <>
       <Provider store={store}>
@@ -13,7 +12,7 @@ function App() {
         <MyRoutes />
       </Provider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
