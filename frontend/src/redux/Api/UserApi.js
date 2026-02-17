@@ -1,6 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { APP_URL } from "../../../config.js";
 
+// user api implementation
 export const UserApi = createApi({
   reducerPath: "userapi",
   tagTypes: ["User"],
