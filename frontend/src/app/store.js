@@ -23,6 +23,6 @@ export const store = configureStore({
       ProjectApi.middleware,
       authMiddleware
     ),
-});
+})
 
 setupListeners(store.dispatch);
