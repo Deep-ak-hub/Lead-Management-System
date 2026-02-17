@@ -290,7 +290,7 @@ export default function Home() {
                 </div>
             </section>
 
-            // CTA Section
+            {/* CTA Section */}
             <section className="max-w-7xl mx-auto px-6 py-20">
                 <div className="relative rounded-3xl p-12 md:p-16 overflow-hidden">
                     <div className="absolute inset-0 bg-black/20"></div>
