@@ -15,6 +15,7 @@ import Home from "./pages/Home";
 import ViewAdmins from "./features/profile/ViewAdmins";
 import ProfileLayout from "./layout/ProfileLayout";
 
+// routes setup
 const MyRoutes = () => {
     const token = useSelector((state) => state.admin.token);
 

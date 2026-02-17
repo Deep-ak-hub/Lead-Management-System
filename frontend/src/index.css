@@ -1,4 +1,5 @@
 @import "tailwindcss";
+/* root element */
 :root {
   background-color: var(--color-background);
   input,
