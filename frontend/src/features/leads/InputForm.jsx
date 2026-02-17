@@ -27,13 +27,12 @@ const InputForm = ({ setIsModalOpen }) => {
 
         try {
             const response = await addUser({ data: values }).unwrap();
-
             setIsModalOpen(false);
             refetch()
             toast.success(response?.message);
         } catch (error) {
             console.log(error);
-            toast.error(error?.data?.message || "Something went wrong");
+            toast.error(error?.data?.message || "Something went wrong!!");
         }
     };
 
