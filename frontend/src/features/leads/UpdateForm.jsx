@@ -2,9 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 
 import { toast } from 'react-toastify'
 import { useGetUsersQuery, useUpdateUserMutation } from '../../redux/Api/UserApi'
-import { FaTrash } from 'react-icons/fa6'
 import { useGetServiceQuery } from '../../redux/Api/Service'
-import { FaPlus } from 'react-icons/fa'
 import { formatForDateTimeInput } from '../../utils/localdatetime'
 import { useGetAdminQuery } from '../../redux/Api/Admin'
 
