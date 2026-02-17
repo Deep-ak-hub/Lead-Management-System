@@ -66,7 +66,7 @@ export const UserApi = createApi({
       invalidatesTags: ["User"],
     }),
   }),
-});
+})
 
 export const {
   useAddUserMutation,
