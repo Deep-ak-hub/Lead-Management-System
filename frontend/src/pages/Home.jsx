@@ -201,27 +201,27 @@ export default function Home() {
             </div>
             <ul className="space-y-4 mb-8">
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>Up to 50 leads</span>
               </li>
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>Client & student management</span>
               </li>
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>Project tracking</span>
               </li>
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>Basic analytics</span>
               </li>
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>Email support</span>
               </li>
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>1 user account</span>
               </li>
             </ul>
@@ -249,31 +249,31 @@ export default function Home() {
             </div>
             <ul className="space-y-4 mb-8">
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>Up to 500 leads</span>
               </li>
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>All Starter features</span>
               </li>
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>Advanced analytics & reporting</span>
               </li>
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>Automated workflows</span>
               </li>
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>Priority support</span>
               </li>
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>5 user accounts</span>
               </li>
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>Custom integrations</span>
               </li>
             </ul>
@@ -294,35 +294,35 @@ export default function Home() {
             </div>
             <ul className="space-y-4 mb-8">
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>Unlimited leads</span>
               </li>
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>All Professional features</span>
               </li>
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>Full analytics suite</span>
               </li>
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>Advanced automation</span>
               </li>
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>24/7 dedicated support</span>
               </li>
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>Unlimited users</span>
               </li>
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>API access</span>
               </li>
               <li className="flex items-start gap-3 text-purple-200">
-                <Check className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+                <Check className="w-5 h-5 text-green-400 mt-1 shrink-0" />
                 <span>White-label option</span>
               </li>
             </ul>
