@@ -8,7 +8,7 @@ export const RegisterDTO = Joi.object({
   password: Joi.string().regex(PasswordRegex).required().messages({
     "string.empty": "Password cannot be null",
     "string.pattern.base":
-      "Password must have an alpha numeric value with a special character and of 8 to 25",
+      "Password must have an alpha numeric value with a special character and at least 8 to 25",
   }),
   confirmPassword: Joi.string().valid(Joi.ref("password")).required().messages({
     "any.only": "Password and confirmPassword must be same",
@@ -30,7 +30,7 @@ export const resetPasswordDTO = Joi.object({
   password: Joi.string().regex(PasswordRegex).required().messages({
     "string.empty": "Password cannot be null",
     "string.pattern.base":
-      "Password must have an alpha numeric value with a special character and of 8 to 25",
+      "Password must have an alpha numeric value with a special character and at least 8 to 25",
   }),
   confirmPassword: Joi.string().valid(Joi.ref("password")).required().messages({
     "any.only": "Password and confirmPassword must be same",
