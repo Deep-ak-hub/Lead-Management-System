@@ -7,7 +7,7 @@ class LeadsService {
       const data = await Leads.findOne(filter);
       return data;
     } catch (exception) {
-      throw exception;
+      throw exception
     }
   }
 
@@ -24,7 +24,7 @@ class LeadsService {
       }
       return leadId;
     } catch (exception) {
-      throw exception;
+      throw exception
     }
   }
 
@@ -37,7 +37,7 @@ class LeadsService {
       );
       return updatedData;
     } catch (exception) {
-      throw exception;
+      throw exception
     }
   }
 
@@ -56,7 +56,7 @@ class LeadsService {
     try {
       return await Leads.create(data);
     } catch (exception) {
-      throw exception;
+      throw exception
     }
   }
 
@@ -64,7 +64,7 @@ class LeadsService {
     try {
       return await Leads.findOneAndDelete(filter);
     } catch (exception) {
-      throw exception;
+      throw exception
     }
   }
 }
