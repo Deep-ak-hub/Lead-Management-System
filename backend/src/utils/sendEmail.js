@@ -40,6 +40,6 @@ const sendEmailFP = async (options) => {
     html: options.html,
   };
   await transporter.sendMail(mailOptions);
-};
+}
 
 export { sendEmail, sendEmailFP };
