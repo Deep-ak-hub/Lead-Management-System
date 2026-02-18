@@ -4,7 +4,6 @@ export const validateBodyData = (schema) => {
   return asyncHandler(async (req, res, next) => {
     try {
       const data = req.body;
-      // console.log(data);
 
       if (!data) {
         next({
@@ -19,7 +18,6 @@ export const validateBodyData = (schema) => {
       }
 
       await schema.validateAsync(data, { abortEarly: false });
-      // console.log("hello");
       next();
     } catch (exception) {
       let errorBag = {};
