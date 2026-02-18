@@ -1,21 +1,17 @@
 import mongoose from "mongoose";
-import bcrypt from "bcrypt";
 import Admin from "../models/admin.model.js";
 import dotenv from "dotenv";
+import { hashPassword } from "../utils/password.utils.js";
 
 dotenv.config();
 
 const MONGO_URI = process.env.DATABASE;
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD
 
 async function seedAdmin() {
   try {
     await mongoose.connect(`${MONGO_URI}`);
-    console.log("MongoDB connected");
-    const salt = await bcrypt.genSalt(10);
-    const hashedPassword = await bcrypt.hash('admin123', salt);
-
-    // Clear existing admins (optional)
-    await Admin.deleteMany();
+    const hashedPassword = await hashPassword(ADMIN_PASSWORD, 10);
 
     const admins = [
       {
