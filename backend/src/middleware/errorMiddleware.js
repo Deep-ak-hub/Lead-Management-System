@@ -7,7 +7,7 @@ export const notFound = (req, res, next) => {
 export const errorHandler = (err, req, res, next) => {
   console.log(err);
   const statusCode = err.statusCode || 500;
-  const status = err.status || "fail";
+  const status = err.status || "Internal Server Error..";
   const details = err.details;
   const message = err.message || "Something went wrong";
 
@@ -16,5 +16,5 @@ export const errorHandler = (err, req, res, next) => {
     details,
     status,
     statusCode,
-  });
+  })
 };
