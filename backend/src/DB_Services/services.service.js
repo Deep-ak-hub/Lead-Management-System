@@ -4,10 +4,7 @@ import apiError from "../utils/apiError.js";
 class ServicesService {
   async validateExistingService(data) {
     try {
-      console.log(data);
-
       const existingService = await Service.findOne({ title: data.title });
-      //    console.log(existingService);
 
       if (existingService) {
         throw apiError("Service already exists", 400);
@@ -61,15 +58,11 @@ class ServicesService {
 
   async updateService(data, filter) {
     try {
-      // console.log(data);
-      // console.log(filter);
-
       const updatedData = await Service.findOneAndUpdate(
         filter,
         { $set: data },
         { new: true },
       );
-      //   console.log(updatedData);
 
       return updatedData;
     } catch (exception) {
