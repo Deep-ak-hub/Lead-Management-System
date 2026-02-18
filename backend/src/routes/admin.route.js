@@ -41,6 +41,6 @@ router.post(
 
 router.post("/admin/verify", verifyOtp);
 
-router.put("/admin/reset", validateBodyData(resetPasswordDTO), resetPassword);
+router.put("/admin/reset", validateBodyData(resetPasswordDTO), resetPassword)
 
 export default router;

@@ -13,7 +13,6 @@ import {
   createLeadsDTO,
   updateLeadsDTO,
 } from "../validation/leads.validator.js";
-// import { leadsDTO } from "../validation/leads.validator.js";
 
 const router = express.Router();
 
