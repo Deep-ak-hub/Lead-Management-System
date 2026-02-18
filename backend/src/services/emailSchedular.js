@@ -7,8 +7,6 @@ const scheduleEmail = () => {
   cron.schedule(
     "30 10 * * *",
     async () => {
-      console.log("📩 Running follow-up email job");
-
       // Start of today (UTC)
       const today = new Date();
       today.setUTCHours(0, 0, 0, 0);
@@ -17,7 +15,7 @@ const scheduleEmail = () => {
       const tomorrow = new Date(today);
       tomorrow.setUTCDate(today.getUTCDate() + 1);
 
-      // 1️⃣ Get today's follow-up leads
+      // Get today's follow-up leads
       const leadsToFollowUp = await Leads.find({
         status: "Follow Up",
         followUp: {
@@ -31,7 +29,7 @@ const scheduleEmail = () => {
         return;
       }
 
-      // 2️⃣ Group leads by admin
+      //Group leads by admin
       const leadsByAdmin = leadsToFollowUp.reduce((acc, lead) => {
         const adminId = String(lead.admin);
 
@@ -41,7 +39,7 @@ const scheduleEmail = () => {
         return acc;
       }, {});
 
-      // 3️⃣ Fetch all admins at once
+      //Fetch all admins at once
       const adminIds = Object.keys(leadsByAdmin);
 
       const admins = await adminService.getByFilter({
@@ -52,7 +50,7 @@ const scheduleEmail = () => {
         admins.map((admin) => [String(admin._id), admin]),
       );
 
-      // 4️⃣ Send ONE email per admin
+      // Send ONE email per admin
       for (const adminId of adminIds) {
         const admin = adminMap[adminId];
         if (!admin?.email) continue;
@@ -121,7 +119,6 @@ const scheduleEmailForClient = () => {
     console.log(userToRemind.length);
     console.log("userToRemind", userToRemind);
     for (const user of userToRemind) {
-      // console.log('user to followup', userToRemind)
       try {
         await sendEmail({
           subject: ` Reminder: Your Project Deadline is Approaching: ${user.name}`,
