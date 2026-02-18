@@ -33,8 +33,6 @@ export const postAdmin = asyncHandler(async (req, res) => {
 export const postLogin = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
 
-  // console.log(email, password);
-
   const adminDetails = await adminService.getSingleRowByFilter({
     email: email,
   });
@@ -78,7 +76,6 @@ export const adminDetails = asyncHandler(async (req, res) => {
 export const getAllAdmins = asyncHandler(async (req, res) => {
   const allAdmins = await adminService.getAllAdminProfile({ role: "admin" });
   const data = allAdmins.map((el) => adminService.getAdminPublicProfile(el));
-  // adminService.getAdminPublicProfile(allAdmins);
   return apiResponse(res, 200, data, "All admin retrieved successfully");
 });
 
@@ -141,7 +138,6 @@ export const verifyOtp = asyncHandler(async (req, res) => {
 export const resetPassword = asyncHandler(async (req, res) => {
   const { email, password } = req.body;
 
-  // return apiResponse(res, 200, userResponse, "Admin updated successfully");
   const user = await adminService.getSingleRowByFilter({ email: email });
 
   if (!user) {
