@@ -14,9 +14,6 @@ export const authMiddleware = (allowedRoles = null) => {
       token = token.replace("Bearer ", "");
 
       const decoded = jwt.verify(token, process.env.TOKEN);
-      // console.log(decoded);
-
-      // req.user = decoded;
 
       const admin = await adminService.getSingleRowByFilter({
         _id: decoded.userId,
