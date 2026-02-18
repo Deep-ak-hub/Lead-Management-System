@@ -13,3 +13,6 @@
   --color-accent: #10b981;
   --color-background: #000;
 }
+button{
+  cursor: pointer;
+}
