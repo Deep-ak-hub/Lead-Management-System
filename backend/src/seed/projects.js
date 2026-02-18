@@ -12,7 +12,6 @@ const leadId = "69673c67246a3b409e196b4e";
 const seedProjects = async () => {
   try {
     await mongoose.connect(MONGO_URI);
-    console.log("MongoDB connected");
 
     const projects = [
       {
