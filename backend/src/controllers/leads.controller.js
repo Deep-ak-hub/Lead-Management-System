@@ -15,10 +15,6 @@ export const postLeads = asyncHandler(async (req, res) => {
   const { userId } = req.user;
   const data = { ...req.body, admin: userId };
 
-  // if (!mongoose.Types.ObjectId.isValid(adminId)) {
-  //   throw apiError("Admin not found", 400);
-  // }
-
   adminService.validateAdminId(userId);
 
   await leadService.validateExistingUser(email, userId);
@@ -28,9 +24,7 @@ export const postLeads = asyncHandler(async (req, res) => {
   return apiResponse(res, 201, user, "Successfully added the information");
 });
 
-/**
- * Get all leads with pagination, filters, and search
- */
+// Get all leads with pagination, filters, and search
 export const getLeads = asyncHandler(async (req, res) => {
   const page = parseInt(req.query.page, 10) || 1;
   const limit = parseInt(req.query.limit, 10) || 10;
@@ -91,9 +85,8 @@ export const getLeads = asyncHandler(async (req, res) => {
   );
 });
 
-/**
- * Get a single lead by ID
- */
+// Get a single lead by ID
+ 
 export const getLeadById = asyncHandler(async (req, res) => {
   const { id } = req.params;
 
@@ -118,9 +111,8 @@ export const getLeadById = asyncHandler(async (req, res) => {
   return apiResponse(res, 200, user, "User retrieved successfully");
 });
 
-/**
- * Update a lead by ID
- */
+// Update a lead by ID
+ 
 export const updateLead = asyncHandler(async (req, res) => {
   const data = req.body;
   const { id } = req.params;
@@ -142,9 +134,7 @@ export const updateLead = asyncHandler(async (req, res) => {
   return apiResponse(res, 200, user, "User updated successfully");
 });
 
-/**
- * Delete a lead by ID
- */
+// Delete a lead by ID
 export const deleteLead = asyncHandler(async (req, res) => {
   const { id } = req.params;
   const { userId } = req.user;
