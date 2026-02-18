@@ -26,5 +26,5 @@ export const updateLeadsDTO = Joi.object({
 })
   .min(1)
   .messages({
-    "object.min": "At least one field is required to update the lead",
+    "object.min": "At least a single field is required to update the lead",
   });
