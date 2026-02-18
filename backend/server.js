@@ -13,14 +13,12 @@ import projects from "./src/routes/projects.routes.js";
 
 import {
   scheduleEmail,
-  scheduleEmailForClient,
 } from "./src/services/emailSchedular.js";
 import { notFound, errorHandler } from "./src/middleware/errorMiddleware.js";
 
 const app = express();
 let port = process.env.PORT;
 
-//cors middleware
 app.use(
   cors({
     origin: "*",
