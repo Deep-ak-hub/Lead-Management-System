@@ -12,6 +12,6 @@ const jwtToken = (userId) => {
   return jwt.sign({ userId }, process.env.TOKEN, {
     expiresIn: process.env.DAYS,
   });
-};
+}
 
 export { jwtToken };
