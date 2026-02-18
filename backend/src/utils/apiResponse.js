@@ -1,4 +1,3 @@
-// apiResponse.js
 export const apiResponse = (
   res,
   statusCode = 200,
