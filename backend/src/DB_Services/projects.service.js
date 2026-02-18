@@ -21,7 +21,6 @@ class ProjectService {
   async getProjectById(id) {
     try {
       const data = await Project.findOne({ _id: id });
-      //   console.log(data);
       return data;
     } catch (exception) {
       throw exception;
