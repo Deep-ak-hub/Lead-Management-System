@@ -27,6 +27,6 @@ router.put(
   authMiddleware(),
   validateBodyData(updateProjectDTO),
   updateProject,
-);
+)
 
 export default router;
