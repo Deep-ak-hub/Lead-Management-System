@@ -18,7 +18,6 @@ export const addProject = asyncHandler(async (req, res) => {
 
 export const getProjects = asyncHandler(async (req, res) => {
   const { leadId } = req.params;
-  // console.log(leadId);
 
   await leadService.validateLeadId(leadId);
 
@@ -39,7 +38,6 @@ export const getProjectById = asyncHandler(async (req, res) => {
   return apiResponse(res, 200, data, "Project retrieved successfully");
 });
 
-//rewtire below function with validation add lead id
 export const updateProject = asyncHandler(async (req, res) => {
   const data = req.body;
   const { id } = req.params;
