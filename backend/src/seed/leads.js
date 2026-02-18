@@ -60,11 +60,7 @@ const seedLeads = async () => {
     await mongoose.connect(process.env.DATABASE);
     console.log("MongoDB connected");
 
-    // Optional: clear existing leads for this admin
-    await Leads.deleteMany();
-
     await Leads.insertMany(leadsData);
-    console.log("Leads seeded successfully");
 
     process.exit();
   } catch (error) {
