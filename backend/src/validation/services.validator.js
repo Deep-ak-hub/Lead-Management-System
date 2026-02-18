@@ -3,14 +3,14 @@ import Joi from "joi";
 export const createServiceDTO = Joi.object({
   title: Joi.string().trim().min(3).max(100).required().messages({
     "string.empty": "Service name is required",
-    "string.min": "Service name must be at least 3 characters",
+    "string.min": "Service name must be at least 3 characters long",
   }),
   fee: Joi.number().required(),
 });
 
 export const updateServiceDTO = Joi.object({
   title: Joi.string().trim().min(2).max(75).optional().messages({
-    "string.min": "Service name must be at least 3 characters",
+    "string.min": "Service name must be at least 3 characters long",
   }),
   fee: Joi.number().optional(),
 })
