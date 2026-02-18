@@ -17,7 +17,7 @@ export const createProjectDTO = Joi.object({
       Joi.object({
         amount: Joi.number().positive().required().messages({
           "number.base": "Installment amount must be a number",
-          "number.positive": "Installment amount must be greater than 0",
+          "number.positive": "Installment amount must be greater than zero",
         }),
         paidDate: Joi.date().optional().messages({
           "date.base": "Paid date must be a valid date",
@@ -31,7 +31,7 @@ export const createProjectDTO = Joi.object({
   }),
 
   endDate: Joi.date().greater(Joi.ref("startDate")).optional().messages({
-    "date.greater": "End date must be after start date",
+    "date.greater": "End date must be greater than start date",
   }),
 
   isComplete: Joi.boolean().optional().default(false),
