@@ -1,13 +1,9 @@
-import Service from "../models/service.model.js";
 import { apiResponse } from "../utils/apiResponse.js";
-import apiError from "../utils/apiError.js";
 import asyncHandler from "../utils/asyncHandler.js";
 import { adminService } from "../DB_Services/admin.service.js";
 import { servicesService } from "../DB_Services/services.service.js";
 
-/**
- * Add a new service
- */
+// Add a new service
 export const postService = asyncHandler(async (req, res) => {
   const { title, fee } = req.body;
   const { userId } = req.user;
@@ -23,9 +19,7 @@ export const postService = asyncHandler(async (req, res) => {
   return apiResponse(res, 201, newService, "Service added successfully");
 });
 
-/**
- * Get all services
- */
+// Get all services
 export const getAllService = asyncHandler(async (req, res) => {
   const { userId } = req.user;
 
@@ -36,9 +30,7 @@ export const getAllService = asyncHandler(async (req, res) => {
   return apiResponse(res, 200, services, "Services retrieved successfully");
 });
 
-/**
- * Update a service by ID
- */
+// Update a service by ID
 export const updateService = asyncHandler(async (req, res) => {
   const data = req.body;
   const { id } = req.params;
@@ -56,9 +48,7 @@ export const updateService = asyncHandler(async (req, res) => {
   return apiResponse(res, 200, update, "Service updated successfully");
 });
 
-/**
- * Delete a service by ID
- */
+// Delete a service by ID
 export const deleteService = asyncHandler(async (req, res) => {
   const { id } = req.params;
   const { userId } = req.user;
