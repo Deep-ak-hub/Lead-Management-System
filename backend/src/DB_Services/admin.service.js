@@ -11,7 +11,7 @@ class AdminService {
         password: hashedPassword,
       });
     } catch (exception) {
-      throw exception;
+      throw exception
     }
   }
 
@@ -35,7 +35,7 @@ class AdminService {
       }
       return validateId;
     } catch (exception) {
-      throw exception;
+      throw exception
     }
   }
 
@@ -44,7 +44,7 @@ class AdminService {
       const User = new Admin(data);
       return await User.save();
     } catch (exception) {
-      throw exception;
+      throw exception
     }
   }
 
@@ -53,7 +53,7 @@ class AdminService {
       const userDetail = await Admin.findOne(filter);
       return userDetail;
     } catch (exception) {
-      throw exception;
+      throw exception
     }
   }
 
@@ -69,7 +69,7 @@ class AdminService {
         { new: true },
       );
     } catch (exception) {
-      throw exception;
+      throw exception
     }
   }
 
@@ -86,7 +86,7 @@ class AdminService {
     try {
       return await Admin.find(filter);
     } catch (exception) {
-      throw exception;
+      throw exception
     }
   }
 }
